@@ -13,6 +13,27 @@
 @implementation FISAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    NSInteger roadrunner = 0;
+    NSInteger coyoteRange = arc4random_uniform(100);
+    
+    do
+  
+    {
+        NSLog(@"Meep Meep!");
+        roadrunner++;
+    
+            if (roadrunner % 11 == 0) {
+                NSLog(@"YOU'RE CUCKCOO");
+            }
+
+    } while (roadrunner < coyoteRange);
+    
+    
+    
+    
+    
     return YES;
 }
 
